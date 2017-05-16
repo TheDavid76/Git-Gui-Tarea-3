@@ -17,4 +17,30 @@ public class Receta {
 		
 	}
 
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getIngredientes() {
+		return ingredientes;
+	}
+
+	public void setIngredientes(String ingredientes) {
+		this.ingredientes = ingredientes;
+	}
+
+	public String getPreparacion() {
+		return preparacion;
+	}
+
+	public void setPreparacion(String preparacion) {
+		this.preparacion = preparacion;
+	}
+	
+	
+	
 }
