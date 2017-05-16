@@ -6,5 +6,15 @@ public class Receta {
 	private String preparacion;
 	
 	
+	Receta() {
+		
+	}
 	
+	Receta(String nombre, String ingredientes, String preparacion) {
+		this.nombre=nombre;
+		this.ingredientes=ingredientes;
+		this.preparacion=preparacion;
+		
+	}
+
 }
