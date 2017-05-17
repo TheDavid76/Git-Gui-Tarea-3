@@ -4,18 +4,17 @@ public class Receta {
 
 	private String nombre;
 	
-	ArrayList<String>ingredientes = new ArrayList<String>();
+	ArrayList<Ingredientes>ingredientes = new ArrayList<Ingredientes>();
 	ArrayList<String>preparacion = new ArrayList<String>();
 	
 	Receta() {
 		
 	}
 	
-	Receta(String nombre, ArrayList<String> ingredientes, ArrayList<String> preparacion) {
+	Receta(String nombre, ArrayList<Ingredientes> ingredientes, ArrayList<String> preparacion) {
 		this.nombre=nombre;
 		this.ingredientes=ingredientes;
-		this.preparacion=preparacion;
-		
+		this.preparacion=preparacion;	
 	}
 
 	public String getNombre() {
@@ -26,11 +25,11 @@ public class Receta {
 		this.nombre = nombre;
 	}
 
-	public ArrayList<String> getIngredientes() {
+	public ArrayList<Ingredientes> getIngredientes() {
 		return ingredientes;
 	}
 
-	public void setIngredientes(ArrayList<String> ingredientes) {
+	public void setIngredientes(ArrayList<Ingredientes> ingredientes) {
 		this.ingredientes = ingredientes;
 	}
 
