@@ -41,8 +41,15 @@ public class Receta {
 		this.preparacion = preparacion;
 	}
 	
+	
+	
+	
 	public void addIngrediente(Ingredientes ingredientes) {	
 		
 	}
 	
+	public void addPreparacion(String preparacion) {
+		
+	}
+
 }
