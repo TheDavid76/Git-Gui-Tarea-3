@@ -1,23 +1,33 @@
 
 public class Ingredientes {
 
-	private String cantidad;
 	private String nombre;
-
+	private String unidad;
+	private Float cantidad;
 	
-	public Ingredientes(String cantidad, String nombre) {
-		this.cantidad = cantidad;
+	
+	public Ingredientes(Float cantidad, String nombre, String unidad) {
 		this.nombre = nombre;
+		this.unidad = unidad;
+		this.cantidad = cantidad;
 	}
 
 
-	public String getCantidad() {
+	public Float getCantidad() {
 		return cantidad;
 	}
 
-
-	public void setCantidad(String cantidad) {
+	public void setCantidad(Float cantidad) {
 		this.cantidad = cantidad;
+	}
+
+	public String getUnidad() {
+		return unidad;
+	}
+
+
+	public void setUnidad(String unidad) {
+		unidad = unidad;
 	}
 
 
