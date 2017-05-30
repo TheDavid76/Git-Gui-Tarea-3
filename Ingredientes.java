@@ -3,15 +3,30 @@ public class Ingredientes {
 
 	private String nombre;
 	private String unidad;
-	private Float cantidad;
+	private float cantidad;
 	
 	
-	public Ingredientes(Float cantidad, String nombre, String unidad) {
-		this.nombre = nombre;
-		this.unidad = unidad;
+	public Ingredientes( float cantidad, String unidad, String nombre) {
 		this.cantidad = cantidad;
+		this.unidad = unidad;
+		this.nombre = nombre;
 	}
 
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getUnidad() {
+		return unidad;
+	}
+
+	public void setUnidad(String unidad) {
+		this.unidad = unidad;
+	}
 
 	public Float getCantidad() {
 		return cantidad;
@@ -21,24 +36,14 @@ public class Ingredientes {
 		this.cantidad = cantidad;
 	}
 
-	public String getUnidad() {
-		return unidad;
-	}
-
-
-	public void setUnidad(String unidad) {
-		unidad = unidad;
-	}
-
-
-	public String getNombre() {
-		return nombre;
-	}
-
-
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
+	public String toString (){
+		String Mensaje= "  "+cantidad+"  "+unidad+"  "+nombre;
+		return Mensaje;
 	}
 	
-	
+	public static void main(String [] args) {
+		Ingredientes i = new Ingredientes (3,"Kg","Tomates");
+		System.out.print(i.toString());
+		
+	}
 }
