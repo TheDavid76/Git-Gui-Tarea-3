@@ -109,6 +109,9 @@ public class Receta {
 		r.addPreparacion("Pelar los tomates");
 		r.addPreparacion("Poner una olla con agua a hervir");
 		r.addPreparacion("Añadir los macarrones");
+		r.addPreparacion("Esperar unos 10/15 minutos");
+		r.addPreparacion("Sacarlos de la olla y echarlos al plato");
+		r.addPreparacion("Añadir el tomate al plato");
 		System.out.println(r.toString());
 	 }
 }
