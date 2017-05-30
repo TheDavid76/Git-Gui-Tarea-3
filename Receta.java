@@ -69,6 +69,17 @@ public class Receta {
 		this.preparacion.add(preparacion);
 	}
 	
+	public Receta recetaPara(int personas){
+		Receta receta = new Receta();
+		ArrayList<Ingredientes>ingrediente = new ArrayList<Ingredientes>();;
+		double numeroPersona = personas/this.getPersonas();
+			for(Ingredientes i:ingrediente) {
+				i.setCantidad((float) (i.getCantidad()*numeroPersona));
+			}
+		receta.setIngredientes(ingrediente);
+		return receta;
+	}
+	
 	public String listarIngredientes() {
 		String lista="";
 		for(Ingredientes i:ingredientes) {
